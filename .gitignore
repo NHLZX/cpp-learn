@@ -1,0 +1,43 @@
+# 编译产物（无扩展名的可执行文件）
+cpp/exs
+factory/myfactory
+factory/threadpool
+shared_from_this/shared
+shared_from_this/shared_test
+test/my_bind
+test/my_program
+threadid/threadid
+leetcode/alloctor
+leetcode/alloctor_test
+leetcode/allactor
+leetcode/leet
+leetcode/leetcode
+leetcode/leetcode11
+leetcode/leetcode128
+leetcode/leetcode128_test
+leetcode/leetcode136
+leetcode/leetcode279
+leetcode/leetcode300
+leetcode/leetcode45
+leetcode/leetcode49
+leetcode/leetcode_tests
+leetcode/lessn
+
+# 大型安装包
+leetcode/Miniconda3-latest-Linux-x86_64.sh
+
+# Claude Code 本地配置（含个人设置，不入库）
+.claude/
+
+# 通用 C++ 构建产物
+*.o
+*.out
+*.a
+*.so
+*.d
+
+# VSCode 工作区配置（可选，按需保留）
+.vscode/
+
+# macOS
+.DS_Store
