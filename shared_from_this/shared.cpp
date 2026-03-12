@@ -53,16 +53,14 @@ public:
         // 不再单独捕获 this，避免同一对象有两条引用路径，语义更清晰
         return mock_async_read([self]()
                                {
-            std::cout << "[Session " << self->id_ << "] 回调函数开始执行\n";
-            self->handle_read();
-            std::cout << "[Session " << self->id_ << "] 回调函数执行结束\n";
-            // Lambda 结束，self 析构，引用计数 -1
-        });
+                                   std::cout << "[Session " << self->id_ << "] 回调函数开始执行\n";
+                                   self->handle_read();
+                                   // Lambda 结束，self 析构，引用计数 -1
+                               });
     }
 
     void handle_read()
     {
-        std::cout << "[Session " << id_ << "] 正在处理读到的数据...\n";
     }
 
 private:
