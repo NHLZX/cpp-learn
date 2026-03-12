@@ -41,11 +41,8 @@ void worker(int thread_num)
         std::cout << "---------------------------------------------------" << std::endl;
     }
 
-    // 模拟长时间工作，让线程挂着不退出
-    while (true)
-    {
-        std::this_thread::sleep_for(std::chrono::seconds(100));
-    }
+    // 模拟短暂工作后正常退出，便于学习观察
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
 }
 
 int main()
